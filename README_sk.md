@@ -2,7 +2,7 @@
 
 ---
 
-**ducolookup** je CLI nástroj na hľadanie (Duino-Coin)[https://duinocoin.com] používateľov.
+**ducolookup** je CLI nástroj na hľadanie [Duino-Coin](https://duinocoin.com) používateľov.
 
 ## Kompilovanie a Inštalovanie
 

@@ -4,7 +4,7 @@
 
 ---
 
-**ducolookup** is a CLI tool for looking up (Duino-Coin)[https://duinocoin.com] users.
+**ducolookup** is a CLI tool for looking up [Duino-Coin](https://duinocoin.com) users.
 
 ## Building & Installing
 

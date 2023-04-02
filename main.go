@@ -27,10 +27,6 @@ func main() {
 
 	if opts.Version {
 		if opts.Color {
-			w := color.New(color.FgWhite, color.Bold).SprintFunc()
-			y := color.New(color.FgYellow, color.Bold).SprintFunc()
-			c := color.New(color.FgCyan, color.Bold).SprintFunc()
-
 			fmt.Fprintln(color.Output, y("ducolookup"), w("version"), version)
 			fmt.Fprintln(color.Output, c("Go"), w("version"), runtime.Version())
 		} else {
@@ -39,5 +35,10 @@ func main() {
 		}
 
 		os.Exit(0)
+	}
+
+	if err := printUserInfo(); err != nil {
+		tracerr.Print(err)
+		os.Exit(1)
 	}
 }

@@ -12,8 +12,7 @@ all: build
 
 .PHONY: build
 build: clean
-	mkdir $(BINARY)
-	mkdir $(BINARY)/$(GOOS)-$(GOARCH)
+	mkdir -p $(BINARY)/$(GOOS)-$(GOARCH)
 
 	$(GO) get
 
@@ -21,4 +20,4 @@ build: clean
 
 .PHONY: clean
 clean:
-	rm -rf $(BINARY)
+	rm -rf $(BINARY)/$(GOOS)-$(GOARCH)
